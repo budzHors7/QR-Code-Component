@@ -13,7 +13,13 @@ This is a [Next.js](https://beta.nextjs.org/docs) project bootstrapped with [`cr
 
 ![screenshot](./app/assets/screenshot.png)
 
-First, run the development server using [pnpm](https://pnpm.io):
+First, install the [node modules](https://nodejs.org/api/modules.html) using [pnpm](https://pnpm.io):
+
+```bash
+pnpm install
+```
+
+Then, run the development server using [pnpm](https://pnpm.io):
 
 ```bash
 pnpm dev
