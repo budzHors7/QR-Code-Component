@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.main {
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+}
+
+body {
   @apply flex flex-col justify-center items-center min-h-screen
+  bg-[var(--lightGray)]
+}
+
+.main {
+  @apply max-w-[1440px] min-w-[375px] p-7
+}
+
+.card {
+  @apply bg-white rounded-xl w-full sm:w-72 p-5
+}
+
+.imgStyle {
+  @apply sm:h-72 sm:w-72 rounded-xl object-cover
+}
+
+.textStyles {
+  @apply text-center py-5 space-y-5
+}
+
+.heading {
+  @apply text-[var(--darkBlue)] font-extrabold text-xl
+}
+
+.paragraph {
+  @apply text-[15px] text-[var(--grayishBlue)]
 }
